@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+
+  <!-- ---------------- estilos compartilhados entre login e signup ---------------- -->
+  <link rel="stylesheet" href="styles/acesso.css">
+
+  <!-- ---------------------- lógica aplicada no registro -------------------- -->
+  <script src="./javascript/signup/signup.js" defer></script>
+  <script src="./javascript/funcoes/funcoes.js" defer></script>
+  <script src="./javascript/utils/utils.js" defer></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+
+  <div class="left">
+    <img src="./assets/pessoa-signup.png" alt="">
+  </div>
+  <div class="right">
+    <form class="formulario">
+      <div class="form-header">
+        <p>To-Do App</p>
+      </div>
+
+      <label>
+        Nome:
+        <input id="nome" type="text" required>
+        <small id="smallNome"></small>
+      </label>
+      <label>
+        Sobrenome:
+        <input id="sobreNome" type="text" required>
+        <small id="smallSobreNome"></small>
+      </label>
+      <label>
+        Email:
+        <input id="email" type="email" required>
+        <small id="smallEmail"></small>
+      </label>
+      <label>
+        Senha:
+        <input id="password" type="password" class="senha" required maxlength="10" minlength="6">
+        <small id="smallPassword"></small>
+      </label>
+      <label>
+        Repetir senha:
+        <input  id="repetirPassword" type="password" class="senha" required maxlength="10" minlength="6">
+        <small id="smallRepetirPassword"></small>
+      </label>
+
+      <button id="criarConta">Criar conta</button>
+      <small id="smallSubmit"></small>
+
+    </form>
+    <div id="ingressar" class="ingressar">
+      <a href="index.html">Já possui conta? Acesse aqui</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
